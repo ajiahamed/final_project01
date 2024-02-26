@@ -6,19 +6,19 @@ pipeline {
         stage('Compile') {
             steps {
                 echo 'compiling...'
-                sh 'mvn compile' // Example Maven command
+                sh 'mvn compile' // Maven command to compile
             }
         }
         stage('Test') {
             steps {
                 echo 'Testing...'
-                sh 'mvn test' // Example Maven command
+                sh 'mvn test' // Maven command to Test
             }
         }
         stage('Build') {
             steps {
                 echo 'Building...'
-                sh 'mvn package' // Example Maven command
+                sh 'mvn package' // Maven command to build
             }
         }
     }
