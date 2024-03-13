@@ -1,7 +1,5 @@
 pipeline {
-    agent {
-        label 'worker01'
-      }
+    agent any
     stages {
         stage('Compile') {
             steps {
