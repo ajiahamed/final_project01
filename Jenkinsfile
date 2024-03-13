@@ -4,19 +4,19 @@ pipeline {
         stage('Compile') {
             steps {
                 echo 'compiling...'
-                sh 'mvn compile' // Maven command to compile
+                sh '/opt/maven/bin/mvn compile' // Maven command to compile
             }
         }
         stage('Test') {
             steps {
                 echo 'Testing...'
-                sh 'mvn test' // Maven command to Test
+                sh '/opt/maven/bin/mvn test' // Maven command to Test
             }
         }
         stage('Build') {
             steps {
                 echo 'Building...'
-                sh 'mvn package' // Maven command to build
+                sh '/opt/maven/bin/mvn package' // Maven command to build
             }
         }
     }
