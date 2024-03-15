@@ -1,0 +1,18 @@
+---
+- name: Build Docker image
+  hosts: controller
+  become: yes
+  vars:
+    ansible_user: nix
+    ansible_python_interpreter: /usr/bin/python3
+
+  tasks:
+    - name: Build Docker image from Dockerfile
+      become_user: root
+      docker_image:
+        name: edureka_app:latest
+        source: build
+        build:
+          pull: no
+          path: /opt/jenkins/workspace/Code_pipline/
+          dockerfile: Dockerfile
