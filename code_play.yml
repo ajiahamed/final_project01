@@ -14,5 +14,5 @@
         source: build
         build:
           pull: no
-          path: /opt/jenkins/workspace/Code_pipline_ansible/
+          path: /opt/jenkins/workspace/Code_pipeline_ansible/
           dockerfile: Dockerfile
