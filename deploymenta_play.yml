@@ -3,4 +3,4 @@
   hosts: localhost
   tasks:
     - name: Apply deployment manifest
-      command: kubectl apply -f cod_manifest.yml
+      command: kubectl apply -f ansible_kubectl/cod_manifest.yml
