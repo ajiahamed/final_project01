@@ -3,4 +3,4 @@
   hosts: localhost
   tasks:
     - name: Apply deployment manifest
-      command: kubectl apply -f cod_manifest.yml --request-timeout=90s --validate=false
+      command: kubectl apply -f cod_manifest.yml --request-timeout=120s --validate=false
