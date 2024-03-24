@@ -1,0 +1,10 @@
+[nnt]
+master ansible_host=192.168.122.91 ansible_connection=local
+controller ansible_host=192.168.122.92 ansible_connection=ssh
+worker01 ansible_host=192.168.122.93 ansible_connection=ssh
+monit ansible_host=192.168.122.95 ansible_connection=ssh
+
+[nnt:vars]
+ansible_user=nix
+ansible_port=22
+
