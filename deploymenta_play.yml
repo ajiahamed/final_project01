@@ -3,5 +3,5 @@
   hosts: localhost
   tasks:
     - name: Apply deployment manifest
-      command: kubectl apply -f /deploymenta_play.yml
+      command: kubectl apply -f deploymenta_play.yml
 
