@@ -1,6 +1,6 @@
 ---
 - name: Apply Kubernetes manifest
-  hosts: worker01
+  hosts: localhost
   tasks:
     - name: Apply deployment manifest
       command: kubectl apply -f deploymenta_play.yml
